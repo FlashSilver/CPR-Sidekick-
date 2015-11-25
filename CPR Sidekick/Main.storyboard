@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sj9-fX-xCA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="owk-bd-6eO">
+            <objects>
+                <viewController id="sj9-fX-xCA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v2H-n2-Udh"/>
+                        <viewControllerLayoutGuide type="bottom" id="hrc-JY-LSJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UNF-Ig-Tnl">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPR Sidekick" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDL-y1-gTm">
+                                <rect key="frame" x="88" y="70" width="184" height="23"/>
+                                <animations/>
+                                <color key="tintColor" red="0.49943870306015015" green="0.94804996252059937" blue="0.11432189494371414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.25504839420318604" green="0.25727283954620361" blue="0.059536509215831757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.39130020141601562" green="0.41537046432495117" blue="0.080420799553394318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo1@2.png" translatesAutoresizingMaskIntoConstraints="NO" id="bZ4-9h-MqY">
+                                <rect key="frame" x="68" y="111" width="240" height="204"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaX-km-ydA">
+                                <rect key="frame" x="81" y="349" width="199" height="72"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="tintColor" red="0.44248682260513306" green="0.90874612331390381" blue="0.79934638738632202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Emergency" backgroundImage="red.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AJT-t9-wOq" kind="modal" modalTransitionStyle="partialCurl" id="9DT-9A-voa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tew-OZ-RdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1085" y="-434"/>
+        </scene>
+        <!--Victim View-->
+        <scene sceneID="n9E-9L-cYi">
+            <objects>
+                <viewController storyboardIdentifier="victimView" id="AJT-t9-wOq" customClass="victimView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MkN-za-TEF"/>
+                        <viewControllerLayoutGuide type="bottom" id="NpE-ps-hxV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T2S-Bx-qSY">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is the victim responsive?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujt-5r-SBg">
+                                <rect key="frame" x="75" y="263" width="233" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63l-DH-gix">
+                                <rect key="frame" x="124" y="320" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes" backgroundImage="green.png">
+                                    <color key="titleColor" red="0.031191207468509674" green="0.056199245154857635" blue="0.038661163300275803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="38t-T5-UlP" kind="modal" modalTransitionStyle="partialCurl" id="8uc-Y5-15u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdv-v1-mEY">
+                                <rect key="frame" x="124" y="390" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="No" backgroundImage="red.png">
+                                    <color key="titleColor" red="0.44248682260513306" green="0.90874612331390381" blue="0.79934638738632202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bw6-cF-c5C" kind="modal" modalTransitionStyle="partialCurl" id="Z7h-9f-dJv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sleep.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eqq-Jq-fWT">
+                                <rect key="frame" x="71" y="107" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-mc-fxO">
+                                <rect key="frame" x="11" y="49" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207468509674" green="0.056199245154857635" blue="0.038661163300275803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sj9-fX-xCA" kind="modal" modalTransitionStyle="partialCurl" id="lKV-Si-0cq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5t-ZM-iXi">
+                                <rect key="frame" x="124" y="464" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="I don't know" backgroundImage="ye.png">
+                                    <color key="titleColor" red="0.024868324398994446" green="0.025973007082939148" blue="0.0083487089723348618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bw6-cF-c5C" kind="modal" modalTransitionStyle="partialCurl" id="U2Y-C2-mYX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrA-IQ-4uG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="-573"/>
+        </scene>
+        <!--Yes Breath View-->
+        <scene sceneID="hpd-Rn-Wv7">
+            <objects>
+                <viewController storyboardIdentifier="YesBreathView" id="38t-T5-UlP" customClass="YesBreathView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oyr-DQ-4iQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="EMA-Rw-l4u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bqd-AZ-Ig2">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is victim breathing normally?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnt-k3-XSc">
+                                <rect key="frame" x="63" y="289" width="263" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu1-eW-ryg">
+                                <rect key="frame" x="119" y="350" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes" backgroundImage="green.png">
+                                    <color key="titleColor" red="0.024868324398994446" green="0.025973007082939148" blue="0.0083487089723348618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="m3X-uh-lEF" kind="modal" id="Eqc-WX-8nE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUI-5K-dlz">
+                                <rect key="frame" x="12" y="55" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207468509674" green="0.056199245154857635" blue="0.038661163300275803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AJT-t9-wOq" kind="modal" modalTransitionStyle="partialCurl" id="Eap-jq-fb2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="breath.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Baa-MK-Vq4">
+                                <rect key="frame" x="74" y="113" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsW-lW-ftT">
+                                <rect key="frame" x="119" y="436" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="No" backgroundImage="red.png">
+                                    <color key="titleColor" red="0.44248682260513306" green="0.90874612331390381" blue="0.79934638738632202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WAb-hY-Vbs" kind="modal" modalTransitionStyle="partialCurl" id="wBJ-a0-Ypu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YsE-Ho-L9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="307"/>
+        </scene>
+        <!--Normal Breath View Controller-->
+        <scene sceneID="IqP-0j-5qt">
+            <objects>
+                <viewController storyboardIdentifier="YesAbnormalBreathView" id="WAb-hY-Vbs" customClass="NormalBreathViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8YG-ec-rah"/>
+                        <viewControllerLayoutGuide type="bottom" id="AMy-Yg-0D7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgk-3o-XTn">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-6y-IlT">
+                                <rect key="frame" x="12" y="58" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207468509674" green="0.056199245154857635" blue="0.038661163300275803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="38t-T5-UlP" kind="modal" modalTransitionStyle="partialCurl" id="Ai0-jJ-jkt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send someone to call for help/911" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjV-ox-BMg">
+                                <rect key="frame" x="73" y="107" width="279" height="46"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CYz-GG-zyU">
+                                <rect key="frame" x="67" y="347" width="252" height="159"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.39158862829208374" green="0.28489160537719727" blue="0.9150504469871521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Administer rescue breathing. Wait for help to arrive.                                     *Adult: Give 1 breath every 5-6 seconds.                                            *Child: Give 1 breath every 3-5 seconds.                                             *make sure to tilt victim's head back and close victim's nose when administering breath.</string>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CPR.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-tn-kV6">
+                                <rect key="frame" x="67" y="178" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uwz-MV-Rdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-957" y="1241"/>
+        </scene>
+        <!--Normal Breath View Controller-->
+        <scene sceneID="vcF-9M-ub0">
+            <objects>
+                <viewController storyboardIdentifier="YesNormalBreathView" id="m3X-uh-lEF" customClass="NormalBreathViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LDi-ot-ypK"/>
+                        <viewControllerLayoutGuide type="bottom" id="RlX-hJ-ImG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="epl-8j-9av">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send someone call for help/911." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6N-ro-qWd">
+                                <rect key="frame" x="65" y="113" width="288" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8x-lx-2Fb">
+                                <rect key="frame" x="12" y="55" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207468509674" green="0.056199245154857635" blue="0.038661163300275803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="38t-T5-UlP" kind="modal" modalTransitionStyle="partialCurl" id="EQ5-9t-RxQ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="breath.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KL2-ZN-YY9">
+                                <rect key="frame" x="65" y="168" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Continue to monitor victim's breathing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-7c-Lmz">
+                                <rect key="frame" x="45" y="327" width="311" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and pulse until help arrives." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OS-Ra-Gfe">
+                                <rect key="frame" x="50" y="367" width="271" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tb1-lF-RMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127" y="1079"/>
+        </scene>
+        <!--Pulse Breath View-->
+        <scene sceneID="akC-A5-eMV">
+            <objects>
+                <viewController storyboardIdentifier="PulseBreathView" id="4UQ-73-aB9" customClass="PulseBreathView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eVy-IV-6Bp"/>
+                        <viewControllerLayoutGuide type="bottom" id="lAM-eg-F9r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="djf-5R-RSi">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is victim breathing normally?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4T-Q3-XHu">
+                                <rect key="frame" x="75" y="295" width="263" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QM7-8j-FSC">
+                                <rect key="frame" x="12" y="55" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207468509674" green="0.056199245154857635" blue="0.038661163300275803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bw6-cF-c5C" kind="modal" modalTransitionStyle="partialCurl" id="x4x-Tn-9C2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="breath.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RHR-Xx-aVo">
+                                <rect key="frame" x="75" y="113" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeq-f9-mpF">
+                                <rect key="frame" x="128" y="350" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes" backgroundImage="green.png">
+                                    <color key="titleColor" red="0.024868324398994446" green="0.025973007082939148" blue="0.0083487089723348618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Uxb-t5-L05" kind="modal" modalTransitionStyle="partialCurl" id="uIM-mz-ZAv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQp-RT-OLN">
+                                <rect key="frame" x="128" y="435" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="No" backgroundImage="red.png">
+                                    <color key="titleColor" red="0.44248682260513306" green="0.90874612331390381" blue="0.79934638738632202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Gk-YY-oBB" kind="modal" modalTransitionStyle="partialCurl" id="zeC-TI-Rkc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TKJ-hy-n8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="509"/>
+        </scene>
+        <!--Pulse Normal Breath View-->
+        <scene sceneID="prg-Sw-KBl">
+            <objects>
+                <viewController storyboardIdentifier="PulseNormalBreathView" id="Uxb-t5-L05" customClass="PulseNormalBreathView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Ii-DT-uS8"/>
+                        <viewControllerLayoutGuide type="bottom" id="M33-mb-MVU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="if4-3C-YC0">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and pulse until help arrives." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmM-MK-CFF">
+                                <rect key="frame" x="82" y="387" width="271" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8j-Kz-4W0">
+                                <rect key="frame" x="12" y="55" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207468509674" green="0.056199245154857635" blue="0.038661163300275803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4UQ-73-aB9" kind="modal" modalTransitionStyle="partialCurl" id="seW-nt-uZj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="breath.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="G3b-nW-HFI">
+                                <rect key="frame" x="70" y="155" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Continue to monitor victim's breathing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGM-hd-kAQ">
+                                <rect key="frame" x="53" y="353" width="311" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEJ-OU-1bd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="1773"/>
+        </scene>
+        <!--Pulse Abnormal Breath View-->
+        <scene sceneID="Id7-sX-sUp">
+            <objects>
+                <viewController storyboardIdentifier="PulseAbnormalBreathView" id="6Gk-YY-oBB" customClass="PulseAbnormalBreathView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pi2-Xt-sgq"/>
+                        <viewControllerLayoutGuide type="bottom" id="RID-5X-fb9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iim-3y-1qB">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBx-Lx-c6R">
+                                <rect key="frame" x="20" y="54" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207468509674" green="0.056199245154857635" blue="0.038661163300275803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4UQ-73-aB9" kind="modal" modalTransitionStyle="partialCurl" id="w3a-Fc-OWN"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LdF-qZ-qJZ">
+                                <rect key="frame" x="58" y="311" width="252" height="159"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.39158862829208374" green="0.28489160537719727" blue="0.9150504469871521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Administer rescue breathing. Wait for help to arrive.                                     *Adult: Give 1 breath every 5-6 seconds.                                            *Child: Give 1 breath every 3-5 seconds.                                             *make sure to tilt victim's head back and close victim's nose when administering breath.</string>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CPR.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HeE-u7-crX">
+                                <rect key="frame" x="58" y="134" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABd-Ni-xdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1479" y="1029"/>
+        </scene>
+        <!--Pulse View-->
+        <scene sceneID="Z3v-qc-cFw">
+            <objects>
+                <viewController storyboardIdentifier="PulseView" id="Bw6-cF-c5C" customClass="PulseView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gOQ-LN-Att"/>
+                        <viewControllerLayoutGuide type="bottom" id="468-Ia-k7x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g0l-Oe-QfH">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="550"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tC-aM-xXZ" propertyAccessControl="none">
+                                <rect key="frame" x="130" y="331" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes" backgroundImage="green.png">
+                                    <color key="titleColor" red="0.024868324398994446" green="0.025973007082939148" blue="0.0083487089723348618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4UQ-73-aB9" kind="modal" modalTransitionStyle="partialCurl" id="JA0-Ul-mJh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nu-F6-FRO">
+                                <rect key="frame" x="130" y="403" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="No" backgroundImage="red.png">
+                                    <color key="titleColor" red="0.44248682260513306" green="0.90874612331390381" blue="0.79934638738632202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="eAo-9g-GjW" kind="modal" modalTransitionStyle="partialCurl" id="BcS-mh-yfl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send someone to call for help/911." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TB-Te-lmr">
+                                <rect key="frame" x="68" y="82" width="273" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send someone to obtain an AED." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joX-wx-Nlz">
+                                <rect key="frame" x="64" y="118" width="266" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does victim have a pulse?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLx-xo-D2i">
+                                <rect key="frame" x="74" y="290" width="260" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99196082353591919" green="0.96923595666885376" blue="0.19154030084609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pulse.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Z4i-7G-gHP">
+                                <rect key="frame" x="77" y="147" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zH-xt-fp3">
+                                <rect key="frame" x="9" y="42" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207468509674" green="0.056199245154857635" blue="0.038661163300275803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="AJT-t9-wOq" kind="modal" modalTransitionStyle="partialCurl" id="eQm-cD-O86"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW0-QE-ha8">
+                                <rect key="frame" x="127" y="474" width="139" height="46"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="I don't know" backgroundImage="ye.png">
+                                    <color key="titleColor" red="0.024868324398994446" green="0.025973007082939148" blue="0.0083487089723348618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="eAo-9g-GjW" kind="modal" modalTransitionStyle="partialCurl" id="Ouq-mQ-QaX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651602745056" green="0.23461240530014038" blue="0.81609588861465454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="550"/>
+                    <connections>
+                        <outlet property="pulse" destination="Z4i-7G-gHP" id="k8J-WS-hW0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMw-dV-w44" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="-98"/>
+        </scene>
+        <!--Trained-->
+        <scene sceneID="NYP-A4-Ck0">
+            <objects>
+                <viewController storyboardIdentifier="CPRTrained" id="eAo-9g-GjW" customClass="CPRTrained" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jc1-cz-aVh"/>
+                        <viewControllerLayoutGuide type="bottom" id="CmA-UL-hMH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r2L-bx-JZt">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="550"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fv-35-vQx">
+                                <rect key="frame" x="20" y="36" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207469999999" green="0.05619924515" blue="0.038661163300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Bw6-cF-c5C" kind="modal" modalTransitionStyle="partialCurl" id="dqJ-YE-ENL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUR-EA-1Xq" propertyAccessControl="none">
+                                <rect key="frame" x="133" y="333" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes" backgroundImage="green.png">
+                                    <color key="titleColor" red="0.024868324399999999" green="0.025973007079999999" blue="0.0083487089719999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Pc1-ya-E05" kind="modal" modalTransitionStyle="partialCurl" id="WDo-KA-lww"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Have you ever been trained in CPR?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IF0-1f-I0L">
+                                <rect key="frame" x="93" y="144" width="243" height="148"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99196082350000003" green="0.96923595669999996" blue="0.19154030080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFY-0B-DhU">
+                                <rect key="frame" x="133" y="425" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="No" backgroundImage="red.png">
+                                    <color key="titleColor" red="0.4424868226" green="0.90874612330000004" blue="0.79934638739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="0ce-1z-hp1" kind="modal" modalTransitionStyle="partialCurl" id="oRs-a7-pnb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="550"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YoQ-0w-tfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413" y="-584"/>
+        </scene>
+        <!--Untrain View Controller-->
+        <scene sceneID="N0k-YS-Y54">
+            <objects>
+                <viewController storyboardIdentifier="UntrainViewController" id="0ce-1z-hp1" customClass="UntrainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ihy-m3-U1f"/>
+                        <viewControllerLayoutGuide type="bottom" id="8hz-0x-Lre"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A5X-kD-eZz">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbR-dP-lFJ">
+                                <rect key="frame" x="20" y="53" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207469999999" green="0.05619924515" blue="0.038661163300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="eAo-9g-GjW" kind="modal" modalTransitionStyle="partialCurl" id="EYo-F8-EBf"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpr2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4LX-15-EFU">
+                                <rect key="frame" x="80" y="151" width="240" height="170"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH9-d8-Urd">
+                                <rect key="frame" x="120" y="406" width="131" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Compressing Chest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PZ-K3-Org">
+                                <rect key="frame" x="89" y="111" width="193" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUL-aI-7Lq">
+                                <rect key="frame" x="133" y="353" width="135" height="45"/>
+                                <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Stop" backgroundImage="red.png">
+                                    <color key="titleColor" red="0.4424868226" green="0.90874612330000004" blue="0.79934638739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stop:" destination="Pc1-ya-E05" eventType="touchUpInside" id="1hZ-j6-6dX"/>
+                                    <action selector="stop:" destination="0ce-1z-hp1" eventType="touchUpInside" id="def-Zm-QA8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="Vent" destination="4LX-15-EFU" id="Kao-HH-q5o"/>
+                        <outlet property="time" destination="OH9-d8-Urd" id="O4J-k4-BoI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sw9-hY-cQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="307"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ggk-7z-cLq">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="Pc1-ya-E05" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Ye-kW-AR1"/>
+                        <viewControllerLayoutGuide type="bottom" id="BIq-7m-jbP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAQ-sr-t0d">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSP-qt-Gu6">
+                                <rect key="frame" x="14" y="28" width="100" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="BackButton.gif">
+                                    <color key="titleColor" red="0.031191207469999999" green="0.05619924515" blue="0.038661163300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="eAo-9g-GjW" kind="modal" modalTransitionStyle="partialCurl" id="dQK-e4-mZX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpr2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Gl-e5-bIh">
+                                <rect key="frame" x="76" y="154" width="240" height="175"/>
+                                <animations/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XOb-F4-xft">
+                                <rect key="frame" x="83" y="86" width="240" height="54"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99196082350000003" green="0.96923595669999996" blue="0.19154030080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-CI-fak">
+                                <rect key="frame" x="123" y="426" width="147" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIk-tW-w18">
+                                <rect key="frame" x="129" y="357" width="135" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Stop" backgroundImage="red.png">
+                                    <color key="titleColor" red="0.4424868226" green="0.90874612330000004" blue="0.79934638739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stop:" destination="Pc1-ya-E05" eventType="touchUpInside" id="bHG-Ju-kJT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12745651599999999" green="0.23461240529999999" blue="0.81609588860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="Vent" destination="7Gl-e5-bIh" id="Quq-dr-4J7"/>
+                        <outlet property="Ventlabel" destination="XOb-F4-xft" id="dUI-mp-kzA"/>
+                        <outlet property="stopbutton" destination="ZIk-tW-w18" id="OuN-cP-fWy"/>
+                        <outlet property="time" destination="7z1-CI-fak" id="F0k-dX-icm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7d-Bh-M38" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1523" y="-213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton.gif" width="650" height="346"/>
+        <image name="CPR.jpg" width="598" height="282"/>
+        <image name="breath.jpg" width="400" height="300"/>
+        <image name="cpr2.png" width="259" height="321"/>
+        <image name="green.png" width="600" height="192"/>
+        <image name="logo1@2.png" width="300" height="300"/>
+        <image name="pulse.gif" width="267" height="186"/>
+        <image name="red.png" width="600" height="181"/>
+        <image name="sleep.jpg" width="386" height="136"/>
+        <image name="ye.png" width="900" height="304"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ouq-mQ-QaX"/>
+        <segue reference="x4x-Tn-9C2"/>
+        <segue reference="JA0-Ul-mJh"/>
+        <segue reference="9DT-9A-voa"/>
+        <segue reference="Ai0-jJ-jkt"/>
+    </inferredMetricsTieBreakers>
+</document>
